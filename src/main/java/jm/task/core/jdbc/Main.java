@@ -7,8 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         UserService userService = new UserServiceImpl();
-
-        userService.createUsersTable();
+            userService.createUsersTable();
 
         userService.saveUser("Alex", "Pierson", (byte) 25);
         System.out.println("User with name " + userService.getAllUsers().get(0).getName() + " add in database");
